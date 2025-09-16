@@ -25,6 +25,5 @@ class Calciatore {
 
 
 int main(){
-    cout<<"ciao";
     return 0;
 }
