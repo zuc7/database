@@ -65,7 +65,7 @@ Dopo aver avviato il programma (`calcioDB.exe`):
 
 ---
 
-## File principali
+<span style="color:red"> ## File principali </span>
 
 ### **final.cpp**
 Questo file rappresenta il punto di ingresso del programma.  
