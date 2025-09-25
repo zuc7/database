@@ -10,7 +10,7 @@
   - I dati sono gestiti in memoria tramite `std::vector` per i record e `std::unordered_map` per accesso rapido per ID.
 - **Modularità:**  
   - La logica di gestione (CRUD, vincoli, query) è centralizzata nella classe [`DataStore`](https://github.com/zuc7/database/blob/main/Gestione.cpp#L45) in `Gestione.cpp`.
-  - Le funzioni di utilità e input sicuro sono in `Util.cpp`.
+  - Le funzioni di utilità e input sicuro sono in [`Util.cpp`](Util.cpp).
 - **Vincoli di business:**  
   - Validazione centralizzata: unicità degli ID, nome squadra unico per lega/anno, campi monetari non negativi, almeno 5 calciatori per squadra, capitano appartenente alla squadra, ecc.
 - **CLI:**  
@@ -68,7 +68,7 @@ Dopo aver avviato il programma (`calcioDB.exe`):
 
 ## File principali
 
-### **final.cpp**
+### [**Final.cpp**](final.cpp)
 Questo file rappresenta il punto di ingresso del programma.  
 Gestisce il ciclo principale dell’applicazione, mostrando il menu CLI all’utente e gestendo tutte le interazioni.  
 Le operazioni disponibili includono:
@@ -84,7 +84,7 @@ Il file si appoggia alle funzioni e ai dati gestiti dalla classe `DataStore` (in
 
 ---
 
-### **Gestione.cpp**
+### [**Gestione.cpp**](Gestione.cpp)
 Questo file contiene la logica centrale del database:
 - Definisce le struct delle entità principali: `SquadraRec`, `CalciatoreRec`, `ProcuratoreRec`
 - Implementa la classe `DataStore`, che gestisce:
@@ -99,7 +99,7 @@ Questo file contiene la logica centrale del database:
 
 ---
 
-### **Util.cpp**
+### [**Util.cpp**](Util.cpp)
 Questo file raccoglie tutte le funzioni di utilità comuni:
 - Funzioni per l’input sicuro da console (`readIntSafe`, `readDoubleSafe`, `readLine`)
 - Funzioni per l’escaping e l’unescaping dei campi CSV, per gestire correttamente caratteri speciali come `;` e newline
@@ -116,6 +116,4 @@ Ogni file ha una responsabilità chiara:
 - `Gestione.cpp` gestisce i dati, la logica e i vincoli  
 - `Util.cpp` fornisce strumenti di supporto per input e gestione dei file CSV
 
----
 
-**Progetto realizzato per la consegna "Archivio Campionati di Calcio" – a.a. 2025.**
