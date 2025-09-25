@@ -4,7 +4,7 @@
 
 
 - **Linguaggio:** C++
-- **Persistenza:** File CSV (`squadre.csv`, `calciatori.csv`, `procuratori.csv`) con separatore `;` e escaping minimo per caratteri speciali.
+- **Persistenza:** File CSV ([`squadre.csv`](squadre.csv), `calciatori.csv`, `procuratori.csv`) con separatore `;` e escaping minimo per caratteri speciali.
 - **Struttura dati:**  
   - Le entità principali (`Squadra`, `Calciatore`, `Procuratore`) sono rappresentate da struct (`SquadraRec`, `CalciatoreRec`, `ProcuratoreRec`).
   - I dati sono gestiti in memoria tramite `std::vector` per i record e `std::unordered_map` per accesso rapido per ID.
