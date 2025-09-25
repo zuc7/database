@@ -4,12 +4,12 @@
 
 
 - **Linguaggio:** C++
-- **Persistenza:** File CSV ([`squadre.csv`](squadre.csv), `calciatori.csv`, `procuratori.csv`) con separatore `;` e escaping minimo per caratteri speciali.
+- **Persistenza:** File CSV ([`squadre.csv`](squadre.csv), [`calciatori.csv`](calciatori.csv), [`procuratori.csv`](procuratori.csv)) con separatore `;` e escaping minimo per caratteri speciali.
 - **Struttura dati:**  
   - Le entità principali (`Squadra`, `Calciatore`, `Procuratore`) sono rappresentate da struct (`SquadraRec`, `CalciatoreRec`, `ProcuratoreRec`).
   - I dati sono gestiti in memoria tramite `std::vector` per i record e `std::unordered_map` per accesso rapido per ID.
 - **Modularità:**  
-  - La logica di gestione (CRUD, vincoli, query) è centralizzata nella classe `DataStore` in `Gestione.cpp`.
+  - La logica di gestione (CRUD, vincoli, query) è centralizzata nella classe [`DataStore`]() in `Gestione.cpp`.
   - Le funzioni di utilità e input sicuro sono in `Util.cpp`.
 - **Vincoli di business:**  
   - Validazione centralizzata: unicità degli ID, nome squadra unico per lega/anno, campi monetari non negativi, almeno 5 calciatori per squadra, capitano appartenente alla squadra, ecc.
