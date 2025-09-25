@@ -1,6 +1,7 @@
 # Archivio “Campionati di Calcio” – Progetto C++
 
-## Scelte Progettuali
+<h2 style="color:blue;">Scelte Progettuali</h2>
+
 
 - **Linguaggio:** C++
 - **Persistenza:** File CSV (`squadre.csv`, `calciatori.csv`, `procuratori.csv`) con separatore `;` e escaping minimo per caratteri speciali.
